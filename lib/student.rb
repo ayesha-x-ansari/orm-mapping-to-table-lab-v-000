@@ -15,6 +15,7 @@ class Student
                                         name TEXT,
                                         grade INTEGER)
               SQL
+          puts "ddddddddddddddd"
     DB[:conn].execute(sql)
   end
 
