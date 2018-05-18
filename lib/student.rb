@@ -32,6 +32,7 @@ class Student
     SQL
     self.name = "Josh"
     self.grade = "9th"
+    puts sql
     DB[:conn].execute(sql, self.name, self.grade)
 
   end
