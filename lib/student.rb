@@ -30,8 +30,8 @@ class Student
       INSERT INTO students (name, grade)
       VALUES (?, ?)
     SQL
-    self.name = "Josh"
-    self.grade = "9th"
+  #  self.name = "Josh"
+  #  self.grade = "9th"
     puts sql
     DB[:conn].execute(sql, self.name, self.grade)
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
