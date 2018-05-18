@@ -30,7 +30,8 @@ class Student
       INSERT INTO students (name, grade)
       VALUES (?, ?)
     SQL
-    puts "ddddddddddddd"
+    self.name = "Josh"
+    self.grade = "9th"
     DB[:conn].execute(sql, self.name, self.grade)
 
   end
